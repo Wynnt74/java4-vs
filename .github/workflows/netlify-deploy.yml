@@ -32,5 +32,5 @@ jobs:
           production-deploy: true
           deploy-message: "Auto-deployed from GitHub Actions 🚀"
         env:
-          NETLIFY_AUTH_TOKEN: ${{ NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
